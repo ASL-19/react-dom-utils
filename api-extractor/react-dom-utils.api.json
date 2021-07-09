@@ -172,7 +172,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "@asl-19/react-dom-utils!FormState:type",
-          "docComment": "/**\n * {@link useFormStateAndFocusManagement} state\n *\n * @public\n */\n",
+          "docComment": "/**\n * {@link useFormStateAndFocusManagement} state\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -206,7 +206,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "@asl-19/react-dom-utils!StylableFC:type",
-          "docComment": "/**\n * React FunctionComponent that takes an optional className prop.\n *\n * @remarks\n *\n * The className prop is used for styling the component instance’s top-level element (which should have `className={className}`) from the outside.\n *\n * @public\n */\n",
+          "docComment": "/**\n * React FunctionComponent that takes an optional className prop.\n *\n * @remarks\n *\n * The className prop is used for styling the component instance’s top-level element (which should have `className={className}`) from the outside.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -257,7 +257,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/react-dom-utils!useFormStateAndFocusManagement:var",
-          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

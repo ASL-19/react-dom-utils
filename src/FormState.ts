@@ -1,7 +1,5 @@
 /**
  * {@link useFormStateAndFocusManagement} state
- *
- * @public
  */
 type FormState =
   | { errorMessages: Array<string>; type: "hasErrorMessages" }
