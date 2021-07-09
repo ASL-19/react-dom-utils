@@ -1,6 +1,6 @@
 {
   "name": "@asl-19/react-dom-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared ReactDOM utility functions and types for ASL19 projects",
   "author": {
     "name": "Grant Heaslip",
