@@ -13,8 +13,6 @@ import { SetStateAction } from 'react';
 
 /**
  * {@link useFormStateAndFocusManagement} state
- *
- * @public
  */
 export declare type FormState = {
     errorMessages: Array<string>;
@@ -33,8 +31,6 @@ export declare type FormState = {
  * @remarks
  * The className prop is used for styling the component instance’s top-level
  * element (which should have `className={className}`) from the outside.
- *
- * @public
  */
 export declare type StylableFC<P = {}> = FunctionComponent<P & {
     className?: string;
@@ -45,8 +41,6 @@ export declare type StylableFC<P = {}> = FunctionComponent<P & {
  *
  * @remarks
  * The returned ref objects should be attached to the appropriate elements.
- *
- * @public
  */
 export declare const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     disableFocusManagement?: boolean;
