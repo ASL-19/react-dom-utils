@@ -1,15 +1,5 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "noImplicitAny": true,
-    "outDir": "dist/cjs",
-    "target": "ES5"
-  },
+  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "include": [
     "src/**/*.ts*",
     "*.js",

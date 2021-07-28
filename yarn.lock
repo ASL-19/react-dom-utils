@@ -25,6 +25,11 @@
   resolved "https://registry.yarnpkg.com/@asl-19/js-dom-utils/-/js-dom-utils-0.1.3.tgz#7d9c48004a707b65692c4449d95a0a1bf5876a8d"
   integrity sha512-CFzix3IQZNh5u4rRjZlwm1CyOPcV/e/7zCXNf2XPn4nUtwaWuLfqCLCEy69WKeIqEBBTLXlmyckdSRG9yZKplw==
 
+"@asl-19/shared-package-configs@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@asl-19/shared-package-configs/-/shared-package-configs-0.1.1.tgz#f444907049ff321c22598eb627f464251a551c92"
+  integrity sha512-WuYSJK6Uhm15JCMm7FMLeZCsAJPFOaMrjtoSLHcv+L0zYJ2zfFpWj0sdTxZUeO0hbRSo0zECN0Pm2oxPWAs0WA==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
