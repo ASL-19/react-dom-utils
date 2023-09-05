@@ -8,7 +8,7 @@
 
 import { Dispatch } from 'react';
 import { FunctionComponent } from 'react';
-import { MutableRefObject } from 'react';
+import { RefObject } from 'react';
 import { SetStateAction } from 'react';
 
 /**
@@ -43,10 +43,10 @@ export declare type StylableFC<P = {}> = FunctionComponent<P & {
  * The returned ref objects should be attached to the appropriate elements.
  */
 export declare const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
-    disableFocusManagement?: boolean;
+    disableFocusManagement?: boolean | undefined;
 }) => {
-    confirmationMessageElementRef: MutableRefObject<HTMLParagraphElement>;
-    errorMessagesListRef: MutableRefObject<HTMLUListElement>;
+    confirmationMessageElementRef: RefObject<HTMLParagraphElement>;
+    errorMessagesListRef: RefObject<HTMLUListElement>;
     formState: FormState;
     setFormState: Dispatch<SetStateAction<FormState>>;
 };
