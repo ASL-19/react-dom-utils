@@ -6,10 +6,10 @@
 
 React FunctionComponent that takes an optional className prop.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-declare type StylableFC<P = {}> = FunctionComponent<P & {
+type StylableFC<P = {}> = FunctionComponent<P & {
     className?: string;
 }>;
 ```

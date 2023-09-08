@@ -6,14 +6,14 @@
 
 Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating focus management based on state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
-    disableFocusManagement?: boolean;
+    disableFocusManagement?: boolean | undefined;
 }) => {
-    confirmationMessageElementRef: import("react").MutableRefObject<HTMLParagraphElement>;
-    errorMessagesListRef: import("react").MutableRefObject<HTMLUListElement>;
+    confirmationMessageElementRef: import("react").RefObject<HTMLParagraphElement>;
+    errorMessagesListRef: import("react").RefObject<HTMLUListElement>;
     formState: FormState;
     setFormState: import("react").Dispatch<import("react").SetStateAction<FormState>>;
 }

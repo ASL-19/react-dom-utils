@@ -4,7 +4,7 @@
 
 ### Changes
 
-* Remove @public TSDoc tags [[#2](https://github.com/ASL-19/react-dom-utils/pull/2)]
+- Remove @public TSDoc tags [[#2](https://github.com/ASL-19/react-dom-utils/pull/2)]
 
 ## 0.1.0 [2021-07-09]
 

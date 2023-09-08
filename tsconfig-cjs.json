@@ -2,5 +2,6 @@
   "extends": "@asl-19/shared-package-configs/tsconfig-cjs.json",
   "compilerOptions": {
     "outDir": "dist/cjs"
-  }
+  },
+  "include": ["src/**/*.ts*"]
 }
