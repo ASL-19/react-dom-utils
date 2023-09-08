@@ -261,8 +261,104 @@
         },
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/react-dom-utils!useAddHydratedClassName:var",
+          "docComment": "/**\n * Add \"hydrated\" className to <html> element once site has rendered on client.\n *\n * We use this in Playwright tests to avoid interacting with the page before event handlers are ready.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useAddHydratedClassName: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => void"
+            }
+          ],
+          "fileUrlPath": "src/useAddHydratedClassName.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useAddHydratedClassName",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/react-dom-utils!useDynamicFocusOutlines:var",
+          "docComment": "/**\n * Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.\n *\n * This preserves focus outlines when a user is navigating the site with their keyboard while preventing distracting focus outlines from appearing when the user is navigating via mouse/touch.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useDynamicFocusOutlines: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => void"
+            }
+          ],
+          "fileUrlPath": "src/useDynamicFocusOutlines.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useDynamicFocusOutlines",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/react-dom-utils!useFocusElementAfterRender:var",
+          "docComment": "/**\n * Focus a provided element after the current render.\n *\n * This is necessary to focus an element that will only become focusable after the current render is complete (e.g. if the element comes into view as a result of a setState an event callback).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useFocusElementAfterRender: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => import(\"react\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "Dispatch",
+              "canonicalReference": "@types/react!React.Dispatch:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"react\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "SetStateAction",
+              "canonicalReference": "@types/react!React.SetStateAction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null>>"
+            }
+          ],
+          "fileUrlPath": "src/useFocusElementAfterRender.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useFocusElementAfterRender",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/react-dom-utils!useFormStateAndFocusManagement:var",
-          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n */\n",
+          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -352,6 +448,56 @@
           "variableTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 18
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/react-dom-utils!useOnClickOutside:var",
+          "docComment": "/**\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useOnClickOutside: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ handler, isEnabled, ref, }: {\n    handler: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CallableFunction",
+              "canonicalReference": "!CallableFunction:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isEnabled: boolean;\n    ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RefObject",
+              "canonicalReference": "@types/react!React.RefObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}) => void"
+            }
+          ],
+          "fileUrlPath": "src/useOnClickOutside.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useOnClickOutside",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
           }
         }
       ]

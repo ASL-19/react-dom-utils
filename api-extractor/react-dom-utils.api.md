@@ -29,6 +29,15 @@ export type StylableFC<P = {}> = FunctionComponent<P & {
 }>;
 
 // @public
+export const useAddHydratedClassName: () => void;
+
+// @public
+export const useDynamicFocusOutlines: () => void;
+
+// @public
+export const useFocusElementAfterRender: () => Dispatch<SetStateAction<HTMLElement | null>>;
+
+// @public
 export const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     disableFocusManagement?: boolean | undefined;
 }) => {
@@ -37,5 +46,12 @@ export const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     formState: FormState;
     setFormState: Dispatch<SetStateAction<FormState>>;
 };
+
+// @public (undocumented)
+export const useOnClickOutside: ({ handler, isEnabled, ref, }: {
+    handler: CallableFunction;
+    isEnabled: boolean;
+    ref: RefObject<HTMLElement>;
+}) => void;
 
 ```

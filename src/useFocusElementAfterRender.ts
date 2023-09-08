@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
  * This is necessary to focus an element that will only become focusable after
  * the current render is complete (e.g. if the element comes into view as a
  * result of a setState an event callback).
+ *
+ * @public
+ *
  */
 const useFocusElementAfterRender = () => {
   const [targetFocusElement, setTargetFocusElement] =

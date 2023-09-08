@@ -7,6 +7,9 @@ import { useEffect } from "react";
  * This preserves focus outlines when a user is navigating the site with their
  * keyboard while preventing distracting focus outlines from appearing when the
  * user is navigating via mouse/touch.
+ *
+ * @public
+ *
  */
 const useDynamicFocusOutlines = () => {
   useEffect(() => {

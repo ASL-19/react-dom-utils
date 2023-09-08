@@ -10,7 +10,11 @@ Shared ReactDOM utility functions and types for ASL19 projects.
 
 |  Variable | Description |
 |  --- | --- |
+|  [useAddHydratedClassName](./react-dom-utils.useaddhydratedclassname.md) | <p>Add "hydrated" className to <html> element once site has rendered on client.</p><p>We use this in Playwright tests to avoid interacting with the page before event handlers are ready.</p> |
+|  [useDynamicFocusOutlines](./react-dom-utils.usedynamicfocusoutlines.md) | <p>Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.</p><p>This preserves focus outlines when a user is navigating the site with their keyboard while preventing distracting focus outlines from appearing when the user is navigating via mouse/touch.</p> |
+|  [useFocusElementAfterRender](./react-dom-utils.usefocuselementafterrender.md) | <p>Focus a provided element after the current render.</p><p>This is necessary to focus an element that will only become focusable after the current render is complete (e.g. if the element comes into view as a result of a setState an event callback).</p> |
 |  [useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md) | Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating focus management based on state. |
+|  [useOnClickOutside](./react-dom-utils.useonclickoutside.md) |  |
 
 ## Type Aliases
 

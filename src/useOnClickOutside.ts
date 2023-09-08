@@ -1,5 +1,10 @@
 import { RefObject, useEffect } from "react";
 
+/**
+ *
+ * @public
+ *
+ */
 // This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/
 const useOnClickOutside = ({
   handler,

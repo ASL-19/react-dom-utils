@@ -5,6 +5,8 @@ import { useEffect } from "react";
  *
  * We use this in Playwright tests to avoid interacting with the page before
  * event handlers are ready.
+ *
+ * @public
  */
 const useAddHydratedClassName = () => {
   useEffect(() => {
