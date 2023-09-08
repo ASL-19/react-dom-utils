@@ -90,6 +90,8 @@ export declare const useFormStateAndFocusManagement: ({ disableFocusManagement, 
 };
 
 /**
+ * Detect clicks outside of specific component
+ * This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/
  *
  * @public
  *

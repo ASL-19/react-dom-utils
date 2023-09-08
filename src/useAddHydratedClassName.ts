@@ -8,6 +8,7 @@ import { useEffect } from "react";
  *
  * @public
  */
+
 const useAddHydratedClassName = () => {
   useEffect(() => {
     document.documentElement.classList.add("hydrated");

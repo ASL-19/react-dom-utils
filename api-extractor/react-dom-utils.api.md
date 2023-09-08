@@ -47,7 +47,7 @@ export const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     setFormState: Dispatch<SetStateAction<FormState>>;
 };
 
-// @public (undocumented)
+// @public
 export const useOnClickOutside: ({ handler, isEnabled, ref, }: {
     handler: CallableFunction;
     isEnabled: boolean;

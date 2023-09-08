@@ -4,6 +4,7 @@
 
 ## useOnClickOutside variable
 
+Detect clicks outside of specific component This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/
 
 **Signature:**
 
