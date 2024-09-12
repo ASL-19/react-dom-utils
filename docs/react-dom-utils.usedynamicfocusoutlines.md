@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/react-dom-utils](./react-dom-utils.md) &gt; [useDynamicFocusOutlines](./react-dom-utils.usedynamicfocusoutlines.md)
 
-## useDynamicFocusOutlines variable
+## useDynamicFocusOutlines() function
 
 Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.
 
@@ -13,3 +13,7 @@ This preserves focus outlines when a user is navigating the site with their keyb
 ```typescript
 useDynamicFocusOutlines: () => void
 ```
+**Returns:**
+
+void
+

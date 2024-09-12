@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/react-dom-utils](./react-dom-utils.md) &gt; [useAddHydratedClassName](./react-dom-utils.useaddhydratedclassname.md)
 
-## useAddHydratedClassName variable
+## useAddHydratedClassName() function
 
 Add "hydrated" className to <html> element once site has rendered on client.
 
@@ -13,3 +13,7 @@ We use this in Playwright tests to avoid interacting with the page before event 
 ```typescript
 useAddHydratedClassName: () => void
 ```
+**Returns:**
+
+void
+

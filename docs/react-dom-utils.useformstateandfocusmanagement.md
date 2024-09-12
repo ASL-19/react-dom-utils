@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/react-dom-utils](./react-dom-utils.md) &gt; [useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md)
 
-## useFormStateAndFocusManagement variable
+## useFormStateAndFocusManagement() function
 
 Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating focus management based on state.
 
@@ -10,7 +10,7 @@ Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating fo
 
 ```typescript
 useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
-    disableFocusManagement?: boolean | undefined;
+    disableFocusManagement?: boolean;
 }) => {
     confirmationMessageElementRef: import("react").RefObject<HTMLParagraphElement>;
     errorMessagesListRef: import("react").RefObject<HTMLUListElement>;
@@ -18,6 +18,45 @@ useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     setFormState: import("react").Dispatch<import("react").SetStateAction<FormState>>;
 }
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ disableFocusManagement, }
+
+
+</td><td>
+
+{ disableFocusManagement?: boolean; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
+
+{ confirmationMessageElementRef: import("react").RefObject&lt;HTMLParagraphElement&gt;; errorMessagesListRef: import("react").RefObject&lt;HTMLUListElement&gt;; formState: [FormState](./react-dom-utils.formstate.md)<!-- -->; setFormState: import("react").Dispatch&lt;import("react").SetStateAction&lt;[FormState](./react-dom-utils.formstate.md)<!-- -->&gt;&gt;; }
 
 ## Remarks
 

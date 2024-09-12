@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/react-dom-utils](./react-dom-utils.md) &gt; [useFocusElementAfterRender](./react-dom-utils.usefocuselementafterrender.md)
 
-## useFocusElementAfterRender variable
+## useFocusElementAfterRender() function
 
 Focus a provided element after the current render.
 
@@ -13,3 +13,7 @@ This is necessary to focus an element that will only become focusable after the 
 ```typescript
 useFocusElementAfterRender: () => import("react").Dispatch<import("react").SetStateAction<HTMLElement | null>>
 ```
+**Returns:**
+
+import("react").Dispatch&lt;import("react").SetStateAction&lt;HTMLElement \| null&gt;&gt;
+

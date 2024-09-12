@@ -4,8 +4,6 @@
  * @packageDocumentation
  */
 
-/// <reference types="react" />
-
 import { Dispatch } from 'react';
 import { FunctionComponent } from 'react';
 import { RefObject } from 'react';
@@ -81,7 +79,7 @@ export declare const useFocusElementAfterRender: () => Dispatch<SetStateAction<H
  *
  */
 export declare const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
-    disableFocusManagement?: boolean | undefined;
+    disableFocusManagement?: boolean;
 }) => {
     confirmationMessageElementRef: RefObject<HTMLParagraphElement>;
     errorMessagesListRef: RefObject<HTMLUListElement>;

@@ -4,7 +4,7 @@
 
 ## FormState type
 
-[useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md) state
+[useFormStateAndFocusManagement()](./react-dom-utils.useformstateandfocusmanagement.md) state
 
 **Signature:**
 

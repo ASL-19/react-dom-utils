@@ -6,7 +6,26 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@asl-19/react-dom-utils](./react-dom-utils.md) | Shared ReactDOM utility functions and types for ASL19 projects. |
+<table><thead><tr><th>
 
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@asl-19/react-dom-utils](./react-dom-utils.md)
+
+
+</td><td>
+
+Shared ReactDOM utility functions and types for ASL19 projects.
+
+
+</td></tr>
+</tbody></table>

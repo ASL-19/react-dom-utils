@@ -6,20 +6,115 @@
 
 Shared ReactDOM utility functions and types for ASL19 projects.
 
-## Variables
+## Functions
 
-|  Variable | Description |
-|  --- | --- |
-|  [useAddHydratedClassName](./react-dom-utils.useaddhydratedclassname.md) | <p>Add "hydrated" className to <html> element once site has rendered on client.</p><p>We use this in Playwright tests to avoid interacting with the page before event handlers are ready.</p> |
-|  [useDynamicFocusOutlines](./react-dom-utils.usedynamicfocusoutlines.md) | <p>Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.</p><p>This preserves focus outlines when a user is navigating the site with their keyboard while preventing distracting focus outlines from appearing when the user is navigating via mouse/touch.</p> |
-|  [useFocusElementAfterRender](./react-dom-utils.usefocuselementafterrender.md) | <p>Focus a provided element after the current render.</p><p>This is necessary to focus an element that will only become focusable after the current render is complete (e.g. if the element comes into view as a result of a setState an event callback).</p> |
-|  [useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md) | Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating focus management based on state. |
-|  [useOnClickOutside](./react-dom-utils.useonclickoutside.md) | Detect clicks outside of specific component This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/ |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[useAddHydratedClassName()](./react-dom-utils.useaddhydratedclassname.md)
+
+
+</td><td>
+
+Add "hydrated" className to <html> element once site has rendered on client.
+
+We use this in Playwright tests to avoid interacting with the page before event handlers are ready.
+
+
+</td></tr>
+<tr><td>
+
+[useDynamicFocusOutlines()](./react-dom-utils.usedynamicfocusoutlines.md)
+
+
+</td><td>
+
+Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.
+
+This preserves focus outlines when a user is navigating the site with their keyboard while preventing distracting focus outlines from appearing when the user is navigating via mouse/touch.
+
+
+</td></tr>
+<tr><td>
+
+[useFocusElementAfterRender()](./react-dom-utils.usefocuselementafterrender.md)
+
+
+</td><td>
+
+Focus a provided element after the current render.
+
+This is necessary to focus an element that will only become focusable after the current render is complete (e.g. if the element comes into view as a result of a setState an event callback).
+
+
+</td></tr>
+<tr><td>
+
+[useFormStateAndFocusManagement({ disableFocusManagement, })](./react-dom-utils.useformstateandfocusmanagement.md)
+
+
+</td><td>
+
+Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating focus management based on state.
+
+
+</td></tr>
+<tr><td>
+
+[useOnClickOutside({ handler, isEnabled, ref, })](./react-dom-utils.useonclickoutside.md)
+
+
+</td><td>
+
+Detect clicks outside of specific component This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [FormState](./react-dom-utils.formstate.md) | [useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md) state |
-|  [StylableFC](./react-dom-utils.stylablefc.md) | React FunctionComponent that takes an optional className prop. |
+<table><thead><tr><th>
 
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[FormState](./react-dom-utils.formstate.md)
+
+
+</td><td>
+
+[useFormStateAndFocusManagement()](./react-dom-utils.useformstateandfocusmanagement.md) state
+
+
+</td></tr>
+<tr><td>
+
+[StylableFC](./react-dom-utils.stylablefc.md)
+
+
+</td><td>
+
+React FunctionComponent that takes an optional className prop.
+
+
+</td></tr>
+</tbody></table>
