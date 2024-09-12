@@ -8,6 +8,9 @@ import FormState from "./FormState";
  *
  * @remarks
  * The returned ref objects should be attached to the appropriate elements.
+ *
+ * @public
+ *
  */
 const useFormStateAndFocusManagement = ({
   disableFocusManagement,
