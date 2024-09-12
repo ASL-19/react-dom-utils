@@ -2,11 +2,18 @@
   "name": "@asl-19/react-dom-utils",
   "version": "0.1.1",
   "description": "Shared ReactDOM utility functions and types for ASL19 projects",
-  "author": {
-    "name": "Grant Heaslip",
-    "email": "grant@asl19.org",
-    "url": "https://asl19.org/"
-  },
+  "contributors": [
+    {
+      "name": "Grant Heaslip",
+      "email": "grant@asl19.org",
+      "url": "https://asl19.org/"
+    },
+    {
+      "name": "Min Van",
+      "email": "min@asl19.org",
+      "url": "https://asl19.org/"
+    }
+  ],
   "license": "GPL-3.0-or-later",
   "repository": "ASL-19/react-dom-utils",
   "engines": {
