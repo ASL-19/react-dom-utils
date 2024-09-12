@@ -20,6 +20,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "jest.runMode": "on-demand",
   "redhat.telemetry.enabled": false,
   "rewrap.reformat": true,
   "rewrap.wrappingColumn": 80,
@@ -34,5 +35,6 @@
     "LICENSE": true,
     "types/**/*": true
   },
+  "testing.openTesting": "neverOpen",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
