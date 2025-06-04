@@ -4,12 +4,12 @@
 
 ## FormState type
 
-[useFormStateAndFocusManagement](./react-dom-utils.useformstateandfocusmanagement.md) state
+[useFormStateAndFocusManagement()](./react-dom-utils.useformstateandfocusmanagement.md) state
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-declare type FormState = {
+type FormState = {
     errorMessages: Array<string>;
     type: "hasErrorMessages";
 } | {

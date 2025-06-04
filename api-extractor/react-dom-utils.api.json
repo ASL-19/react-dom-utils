@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.1",
-    "schemaVersion": 1004,
+    "toolVersion": "7.47.8",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "@asl-19/react-dom-utils!",
   "docComment": "/**\n * Shared ReactDOM utility functions and types for ASL19 projects.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/react-dom-utils",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/react-dom-utils!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "TypeAlias",
@@ -176,7 +179,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare type FormState = "
+              "text": "type FormState = "
             },
             {
               "kind": "Content",
@@ -196,6 +199,7 @@
               "text": ";"
             }
           ],
+          "fileUrlPath": "src/FormState.ts",
           "releaseTag": "Public",
           "name": "FormState",
           "typeTokenRange": {
@@ -210,7 +214,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare type StylableFC<P = "
+              "text": "type StylableFC<P = "
             },
             {
               "kind": "Content",
@@ -223,7 +227,7 @@
             {
               "kind": "Reference",
               "text": "FunctionComponent",
-              "canonicalReference": "@types/react!~React.FunctionComponent:interface"
+              "canonicalReference": "@types/react!React.FunctionComponent:interface"
             },
             {
               "kind": "Content",
@@ -234,6 +238,7 @@
               "text": ";"
             }
           ],
+          "fileUrlPath": "src/StylableFC.ts",
           "releaseTag": "Public",
           "name": "StylableFC",
           "typeParameters": [
@@ -255,22 +260,129 @@
           }
         },
         {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/react-dom-utils!useFormStateAndFocusManagement:var",
-          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n */\n",
+          "kind": "Function",
+          "canonicalReference": "@asl-19/react-dom-utils!useAddHydratedClassName:function(1)",
+          "docComment": "/**\n * Add \"hydrated\" className to <html> element once site has rendered on client.\n *\n * We use this in Playwright tests to avoid interacting with the page before event handlers are ready.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "useFormStateAndFocusManagement: "
+              "text": "useAddHydratedClassName: () => "
             },
             {
               "kind": "Content",
-              "text": "({ disableFocusManagement, }?: {\n    disableFocusManagement?: boolean;\n}) => {\n    confirmationMessageElementRef: import(\"react\")."
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "src/useAddHydratedClassName.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "useAddHydratedClassName"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@asl-19/react-dom-utils!useDynamicFocusOutlines:function(1)",
+          "docComment": "/**\n * Hide focus outlines when a mousedown event fires; show focus outlines when a keydown event fires.\n *\n * This preserves focus outlines when a user is navigating the site with their keyboard while preventing distracting focus outlines from appearing when the user is navigating via mouse/touch.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useDynamicFocusOutlines: () => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "src/useDynamicFocusOutlines.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "useDynamicFocusOutlines"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@asl-19/react-dom-utils!useFocusElementAfterRender:function(1)",
+          "docComment": "/**\n * Focus a provided element after the current render.\n *\n * This is necessary to focus an element that will only become focusable after the current render is complete (e.g. if the element comes into view as a result of a setState an event callback).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useFocusElementAfterRender: () => "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"react\")."
             },
             {
               "kind": "Reference",
-              "text": "MutableRefObject",
-              "canonicalReference": "@types/react!~React.MutableRefObject:interface"
+              "text": "Dispatch",
+              "canonicalReference": "@types/react!React.Dispatch:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"react\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "SetStateAction",
+              "canonicalReference": "@types/react!React.SetStateAction:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null>>"
+            }
+          ],
+          "fileUrlPath": "src/useFocusElementAfterRender.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "useFocusElementAfterRender"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@asl-19/react-dom-utils!useFormStateAndFocusManagement:function(1)",
+          "docComment": "/**\n * Hook for storing {@link FormState} and manipulating focus management based on state.\n *\n * @remarks\n *\n * The returned ref objects should be attached to the appropriate elements.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useFormStateAndFocusManagement: ({ disableFocusManagement, }?: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    disableFocusManagement?: boolean;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    confirmationMessageElementRef: import(\"react\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "RefObject",
+              "canonicalReference": "@types/react!React.RefObject:interface"
             },
             {
               "kind": "Content",
@@ -287,8 +399,8 @@
             },
             {
               "kind": "Reference",
-              "text": "MutableRefObject",
-              "canonicalReference": "@types/react!~React.MutableRefObject:interface"
+              "text": "RefObject",
+              "canonicalReference": "@types/react!React.RefObject:interface"
             },
             {
               "kind": "Content",
@@ -306,7 +418,7 @@
             {
               "kind": "Reference",
               "text": "FormState",
-              "canonicalReference": "@asl-19/react-dom-utils!~FormState:type"
+              "canonicalReference": "@asl-19/react-dom-utils!FormState:type"
             },
             {
               "kind": "Content",
@@ -315,7 +427,7 @@
             {
               "kind": "Reference",
               "text": "Dispatch",
-              "canonicalReference": "@types/react!~React.Dispatch:type"
+              "canonicalReference": "@types/react!React.Dispatch:type"
             },
             {
               "kind": "Content",
@@ -324,7 +436,7 @@
             {
               "kind": "Reference",
               "text": "SetStateAction",
-              "canonicalReference": "@types/react!~React.SetStateAction:type"
+              "canonicalReference": "@types/react!React.SetStateAction:type"
             },
             {
               "kind": "Content",
@@ -333,19 +445,99 @@
             {
               "kind": "Reference",
               "text": "FormState",
-              "canonicalReference": "@asl-19/react-dom-utils!~FormState:type"
+              "canonicalReference": "@asl-19/react-dom-utils!FormState:type"
             },
             {
               "kind": "Content",
               "text": ">>;\n}"
             }
           ],
+          "fileUrlPath": "src/useFormStateAndFocusManagement.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 20
+          },
           "releaseTag": "Public",
-          "name": "useFormStateAndFocusManagement",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 18
-          }
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "{ disableFocusManagement, }",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "useFormStateAndFocusManagement"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@asl-19/react-dom-utils!useOnClickOutside:function(1)",
+          "docComment": "/**\n * Detect clicks outside of specific component This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useOnClickOutside: ({ handler, isEnabled, ref, }: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    handler: "
+            },
+            {
+              "kind": "Reference",
+              "text": "CallableFunction",
+              "canonicalReference": "!CallableFunction:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isEnabled: boolean;\n    ref: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RefObject",
+              "canonicalReference": "@types/react!React.RefObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "HTMLElement",
+              "canonicalReference": "!HTMLElement:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "src/useOnClickOutside.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "{ handler, isEnabled, ref, }",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "useOnClickOutside"
         }
       ]
     }
