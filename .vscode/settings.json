@@ -36,5 +36,6 @@
     "types/**/*": true
   },
   "testing.openTesting": "neverOpen",
+  "testing.automaticallyOpenTestResults": "neverOpen",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
