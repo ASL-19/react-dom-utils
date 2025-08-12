@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.47.8",
+    "toolVersion": "7.52.10",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -395,7 +395,7 @@
             },
             {
               "kind": "Content",
-              "text": ">;\n    errorMessagesListRef: import(\"react\")."
+              "text": " | null>;\n    errorMessagesListRef: import(\"react\")."
             },
             {
               "kind": "Reference",
@@ -413,7 +413,7 @@
             },
             {
               "kind": "Content",
-              "text": ">;\n    formState: "
+              "text": " | null>;\n    formState: "
             },
             {
               "kind": "Reference",

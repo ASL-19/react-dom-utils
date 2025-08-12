@@ -16,7 +16,7 @@ const useDynamicFocusOutlines = () => {
     const hideFocusOutlines = () => {
       if (
         // prettier-ignore
-        document.documentElement.className.indexOf(" focusOutlinesHidden") === -1
+        !document.documentElement.className.includes(" focusOutlinesHidden")
       ) {
         document.documentElement.className = `${document.documentElement.className} focusOutlinesHidden`;
       }
@@ -25,7 +25,7 @@ const useDynamicFocusOutlines = () => {
     const showFocusOutlines = () => {
       if (
         // prettier-ignore
-        document.documentElement.className.indexOf(" focusOutlinesHidden") !== -1 &&
+        document.documentElement.className.includes(" focusOutlinesHidden") &&
         document.activeElement &&
         document.activeElement.tagName !== "INPUT" &&
         document.activeElement.tagName !== "TEXTAREA"

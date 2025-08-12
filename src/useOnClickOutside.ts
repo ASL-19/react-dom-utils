@@ -33,6 +33,7 @@ const useOnClickOutside = ({
       }
 
       // Otherwise close the modal
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       handler({ event });
     };
 
