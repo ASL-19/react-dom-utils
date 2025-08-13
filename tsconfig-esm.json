@@ -4,5 +4,7 @@
     "outDir": "dist",
     "moduleResolution": "Bundler"
   },
-  "include": ["src/**/*.ts*"]
+  "include": [
+    "src/**/*.ts*"
+  ]
 }

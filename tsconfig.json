@@ -4,5 +4,10 @@
     "outDir": "dist",
     "moduleResolution": "Bundler"
   },
-  "include": ["*.js", "*.ts", ".eslintrc.js", "src/**/*.ts*"]
+  "include": [
+    "*.js",
+    "*.ts",
+    ".eslintrc.js",
+    "src/**/*.ts*"
+  ]
 }
