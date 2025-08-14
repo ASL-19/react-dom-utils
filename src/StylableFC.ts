@@ -6,6 +6,9 @@ import { FunctionComponent } from "react";
  * @remarks
  * The className prop is used for styling the component instance’s top-level
  * element (which should have `className={className}`) from the outside.
+ *
+ * @public
+ *
  */
 type StylableFC<P = {}> = FunctionComponent<P & { className?: string }>;
 
