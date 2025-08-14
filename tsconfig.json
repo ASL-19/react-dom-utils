@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "moduleResolution": "Bundler",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
     "incremental": true,
-    "module": "esnext",
+    "module": "preserve",
     "outDir": "dist",
     "strict": true,
     "target": "es2021"
