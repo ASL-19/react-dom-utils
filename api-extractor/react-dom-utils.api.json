@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.47.8",
+    "toolVersion": "7.52.10",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -175,7 +175,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "@asl-19/react-dom-utils!FormState:type",
-          "docComment": "/**\n * {@link useFormStateAndFocusManagement} state\n */\n",
+          "docComment": "/**\n * {@link useFormStateAndFocusManagement} state\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -199,7 +199,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/FormState.ts",
+          "fileUrlPath": "dist/FormState.d.ts",
           "releaseTag": "Public",
           "name": "FormState",
           "typeTokenRange": {
@@ -210,7 +210,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "@asl-19/react-dom-utils!StylableFC:type",
-          "docComment": "/**\n * React FunctionComponent that takes an optional className prop.\n *\n * @remarks\n *\n * The className prop is used for styling the component instance’s top-level element (which should have `className={className}`) from the outside.\n */\n",
+          "docComment": "/**\n * React FunctionComponent that takes an optional className prop.\n *\n * @remarks\n *\n * The className prop is used for styling the component instance’s top-level element (which should have `className={className}`) from the outside.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -238,7 +238,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/StylableFC.ts",
+          "fileUrlPath": "dist/StylableFC.d.ts",
           "releaseTag": "Public",
           "name": "StylableFC",
           "typeParameters": [
@@ -273,7 +273,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "src/useAddHydratedClassName.ts",
+          "fileUrlPath": "dist/useAddHydratedClassName.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 2
@@ -297,7 +297,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "src/useDynamicFocusOutlines.ts",
+          "fileUrlPath": "dist/useDynamicFocusOutlines.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 2
@@ -348,7 +348,7 @@
               "text": " | null>>"
             }
           ],
-          "fileUrlPath": "src/useFocusElementAfterRender.ts",
+          "fileUrlPath": "dist/useFocusElementAfterRender.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 8
@@ -395,7 +395,7 @@
             },
             {
               "kind": "Content",
-              "text": ">;\n    errorMessagesListRef: import(\"react\")."
+              "text": " | null>;\n    errorMessagesListRef: import(\"react\")."
             },
             {
               "kind": "Reference",
@@ -413,7 +413,7 @@
             },
             {
               "kind": "Content",
-              "text": ">;\n    formState: "
+              "text": " | null>;\n    formState: "
             },
             {
               "kind": "Reference",
@@ -452,7 +452,7 @@
               "text": ">>;\n}"
             }
           ],
-          "fileUrlPath": "src/useFormStateAndFocusManagement.ts",
+          "fileUrlPath": "dist/useFormStateAndFocusManagement.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 20
@@ -520,7 +520,7 @@
               "text": "void"
             }
           ],
-          "fileUrlPath": "src/useOnClickOutside.ts",
+          "fileUrlPath": "dist/useOnClickOutside.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 9,
             "endIndex": 10
