@@ -39,8 +39,8 @@ export const useFocusElementAfterRender: () => Dispatch<SetStateAction<HTMLEleme
 export const useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     disableFocusManagement?: boolean;
 }) => {
-    confirmationMessageElementRef: RefObject<HTMLParagraphElement>;
-    errorMessagesListRef: RefObject<HTMLUListElement>;
+    confirmationMessageElementRef: RefObject<HTMLParagraphElement | null>;
+    errorMessagesListRef: RefObject<HTMLUListElement | null>;
     formState: FormState;
     setFormState: Dispatch<SetStateAction<FormState>>;
 };

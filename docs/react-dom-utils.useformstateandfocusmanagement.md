@@ -12,8 +12,8 @@ Hook for storing [FormState](./react-dom-utils.formstate.md) and manipulating fo
 useFormStateAndFocusManagement: ({ disableFocusManagement, }?: {
     disableFocusManagement?: boolean;
 }) => {
-    confirmationMessageElementRef: import("react").RefObject<HTMLParagraphElement>;
-    errorMessagesListRef: import("react").RefObject<HTMLUListElement>;
+    confirmationMessageElementRef: import("react").RefObject<HTMLParagraphElement | null>;
+    errorMessagesListRef: import("react").RefObject<HTMLUListElement | null>;
     formState: FormState;
     setFormState: import("react").Dispatch<import("react").SetStateAction<FormState>>;
 }
@@ -54,9 +54,10 @@ _(Optional)_
 
 </td></tr>
 </tbody></table>
+
 **Returns:**
 
-{ confirmationMessageElementRef: import("react").RefObject&lt;HTMLParagraphElement&gt;; errorMessagesListRef: import("react").RefObject&lt;HTMLUListElement&gt;; formState: [FormState](./react-dom-utils.formstate.md)<!-- -->; setFormState: import("react").Dispatch&lt;import("react").SetStateAction&lt;[FormState](./react-dom-utils.formstate.md)<!-- -->&gt;&gt;; }
+{ confirmationMessageElementRef: import("react").RefObject&lt;HTMLParagraphElement \| null&gt;; errorMessagesListRef: import("react").RefObject&lt;HTMLUListElement \| null&gt;; formState: [FormState](./react-dom-utils.formstate.md)<!-- -->; setFormState: import("react").Dispatch&lt;import("react").SetStateAction&lt;[FormState](./react-dom-utils.formstate.md)<!-- -->&gt;&gt;; }
 
 ## Remarks
 

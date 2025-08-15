@@ -1,10 +1,20 @@
 {
-  "cSpell.words": ["heaslip", "rushstack", "tsdoc", "unscoped", "yalc"],
+  "cSpell.words": [
+    "heaslip",
+    "packagehash",
+    "rushstack",
+    "tsdoc",
+    "unscoped",
+    "yalc"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
   "eslint.enable": true,
-  "eslint.validate": ["javascript", "typescript"],
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
   "files.associations": {
     "api-extractor.json": "jsonc"
   },
@@ -33,8 +43,9 @@
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "types/**/*": true
+    "package-lock.json": true
   },
   "testing.openTesting": "neverOpen",
+  "testing.automaticallyOpenTestResults": "neverOpen",
   "typescript.tsdk": "node_modules/typescript/lib"
 }
