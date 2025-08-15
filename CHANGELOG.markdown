@@ -1,5 +1,10 @@
 # @asl-19/react-dom-utils changelog
 
+## [1.1.0](https://github.com/ASL-19/react-dom-utils/pulls?q=is%3Apr+milestone%3A1.1.0) [2025-08-15]
+
+- Migrate to ESM [[#6](https://github.com/ASL-19/react-dom-utils/pull/6)]
+- Update dependencies [[#8](https://github.com/ASL-19/react-dom-utils/pull/8)]
+
 ## [1.0.0](https://github.com/ASL-19/react-dom-utils/pulls?q=is%3Apr+milestone%3A1.0.0) [2024-09-12]
 
 ### Additions
