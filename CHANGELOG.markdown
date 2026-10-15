@@ -1,6 +1,6 @@
 # @asl-19/react-dom-utils changelog
 
-## Unreleased
+## 1.2.0 [2026-10-15]
 
 - `useDynamicFocusOutlines`: Show focus outlines when pressing Tab in a text field, so focus moving out of a field that was clicked into is visible; also treat `contenteditable` elements as text fields
 - `useDynamicFocusOutlines`: Add and remove the `focusOutlinesHidden` class with `classList`, so it’s no longer added twice if the `html` element’s `class` attribute starts with it
