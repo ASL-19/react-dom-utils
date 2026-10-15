@@ -5,7 +5,7 @@ React hooks and types for ReactDOM projects, published to npm as an ESM-only Typ
 ## Commands
 
 ```sh
-npm run dev-lint-test    # npm install, then docs check, type check, ESLint, Prettier, Vitest, publint
+npm run dev-lint-test    # npm install, then docs check, type check, ESLint, Prettier, Vitest, publint, attw
 npm run build-lint-test  # build, then the same checks (what CI and prepublishOnly run)
 npm run docs             # regenerate docs/ (docs-check fails if it's stale)
 npm run outdated         # report Node, npm package and GitHub Actions updates

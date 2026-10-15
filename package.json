@@ -49,7 +49,7 @@
     "docs-check": "typedoc --out node_modules/.cache/docs-check && diff -r node_modules/.cache/docs-check docs || (echo \"docs/ is out of date: run npm run docs\" && exit 1)",
     "eslint-check": "eslint .",
     "eslint-fix": "eslint . --fix",
-    "lint-test": "run-p -l docs-check tsc-check eslint-check prettier-check vitest-check publint-check",
+    "lint-test": "run-p -l docs-check tsc-check eslint-check prettier-check vitest-check publint-check attw-check",
     "mise-outdated": "mise outdated --local",
     "npm-outdated": "npm outdated || true",
     "outdated": "run-s -c -l mise-outdated npm-outdated pinact-outdated",
@@ -61,12 +61,14 @@
     "publint-check": "publint",
     "test": "vitest",
     "tsc-check": "tsc --noEmit && tsc --noEmit --project tsconfig-dist.json",
-    "vitest-check": "vitest run"
+    "vitest-check": "vitest run",
+    "attw-check": "attw --pack . --profile esm-only"
   },
   "dependencies": {
     "@asl-19/js-dom-utils": "^1.1.0"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
     "@asl-19/eslint-config": "^1.0.0",
     "@testing-library/react": "^16.3.3",
     "@types/node": "^24.19.2",
