@@ -4,6 +4,12 @@ import { RefObject, useEffect } from "react";
  * Detect clicks outside of specific component
  * This code is a slightly modified version of this: https://usehooks.com/useOnClickOutside/
  *
+ * @param options - Hook options
+ * @param options.handler - Function called with `{ event }` on mousedown outside
+ * the element
+ * @param options.isEnabled - Whether to call `handler`
+ * @param options.ref - Ref attached to the element
+ *
  * @public
  *
  */
@@ -13,12 +19,12 @@ const useOnClickOutside = ({
   isEnabled,
   ref,
 }: {
-  handler: CallableFunction;
+  handler: (options: { event: MouseEvent }) => void;
   isEnabled: boolean;
-  ref: RefObject<HTMLElement>;
+  ref: RefObject<HTMLElement | null>;
 }) => {
   useEffect(() => {
-    const listener = (event: MouseEvent | TouchEvent) => {
+    const listener = (event: MouseEvent) => {
       if (!isEnabled) {
         return;
       }
@@ -27,13 +33,12 @@ const useOnClickOutside = ({
       if (
         !ref.current ||
         !(event.target instanceof Node) ||
-        ref.current?.contains(event.target)
+        ref.current.contains(event.target)
       ) {
         return;
       }
 
-      // Otherwise close the modal
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+      // Otherwise call handler
       handler({ event });
     };
 
