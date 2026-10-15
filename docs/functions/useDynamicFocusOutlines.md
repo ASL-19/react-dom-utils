@@ -15,6 +15,9 @@ This preserves focus outlines when a user is navigating the site with their
 keyboard while preventing distracting focus outlines from appearing when the
 user is navigating via mouse/touch.
 
+Keydown events in a focused text field (`input`, `textarea` or
+`contenteditable` element) don’t show focus outlines unless the key is Tab.
+
 ## Returns
 
 `void`

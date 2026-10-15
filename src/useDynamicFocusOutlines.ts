@@ -8,38 +8,41 @@ import { useEffect } from "react";
  * keyboard while preventing distracting focus outlines from appearing when the
  * user is navigating via mouse/touch.
  *
+ * Keydown events in a focused text field (`input`, `textarea` or
+ * `contenteditable` element) don’t show focus outlines unless the key is Tab.
+ *
  * @public
  *
  */
 const useDynamicFocusOutlines = () => {
   useEffect(() => {
+    const { classList } = document.documentElement;
+
     const hideFocusOutlines = () => {
-      if (
-        // prettier-ignore
-        !document.documentElement.className.includes(" focusOutlinesHidden")
-      ) {
-        document.documentElement.className = `${document.documentElement.className} focusOutlinesHidden`;
-      }
+      classList.add("focusOutlinesHidden");
     };
 
-    const showFocusOutlines = () => {
+    const showFocusOutlines = (event: KeyboardEvent) => {
+      const { activeElement } = document;
+
+      // Keep focus outlines hidden while typing in a text field the user
+      // clicked into, but always show them on Tab, which fires before focus
+      // leaves the field
       if (
-        // prettier-ignore
-        document.documentElement.className.includes(" focusOutlinesHidden") &&
-        document.activeElement &&
-        document.activeElement.tagName !== "INPUT" &&
-        document.activeElement.tagName !== "TEXTAREA"
+        event.key !== "Tab" &&
+        activeElement instanceof HTMLElement &&
+        (activeElement.tagName === "INPUT" ||
+          activeElement.tagName === "TEXTAREA" ||
+          activeElement.isContentEditable)
       ) {
-        document.documentElement.className =
-          document.documentElement.className.replace(
-            " focusOutlinesHidden",
-            "",
-          );
+        return;
       }
+
+      classList.remove("focusOutlinesHidden");
     };
 
-    window.addEventListener("mousedown", hideFocusOutlines, false);
-    window.addEventListener("keydown", showFocusOutlines, false);
+    window.addEventListener("mousedown", hideFocusOutlines);
+    window.addEventListener("keydown", showFocusOutlines);
 
     return () => {
       window.removeEventListener("mousedown", hideFocusOutlines);

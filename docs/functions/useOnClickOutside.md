@@ -19,7 +19,7 @@ Hook options
 
 #### handler
 
-`CallableFunction`
+(`options`) => `void`
 
 Function called with `{ event }` on mousedown outside
 the element

@@ -12,7 +12,7 @@ const setUp = ({ isEnabled }: { isEnabled: boolean }) => {
   inside.append(insideButton);
   document.body.append(inside, outside);
 
-  const handler = vi.fn();
+  const handler = vi.fn<(options: { event: MouseEvent }) => void>();
 
   renderHook(() => {
     const ref = useRef<HTMLDivElement>(null);
@@ -35,6 +35,7 @@ test("calls handler on mousedown outside the element", () => {
   fireEvent.mouseDown(outside);
 
   expect(handler).toHaveBeenCalledOnce();
+  expect(handler.mock.calls[0]?.[0].event).toBeInstanceOf(MouseEvent);
 });
 
 test("doesn’t call handler on mousedown inside the element", () => {

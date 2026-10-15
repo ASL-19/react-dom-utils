@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- `useDynamicFocusOutlines`: Show focus outlines when pressing Tab in a text field, so focus moving out of a field that was clicked into is visible; also treat `contenteditable` elements as text fields
+- `useDynamicFocusOutlines`: Add and remove the `focusOutlinesHidden` class with `classList`, so it’s no longer added twice if the `html` element’s `class` attribute starts with it
+- `useOnClickOutside`: Type `handler` as `(options: { event: MouseEvent }) => void` instead of `CallableFunction`. Handlers whose parameter types don’t match will no longer type check
 - `useOnClickOutside`: Accept `RefObject<HTMLElement | null>`, so refs created with React 19’s `useRef<HTMLElement>(null)` type check
 - `useFormStateAndFocusManagement`: Fix `FormState` import in type declarations missing its `.js` extension, which broke type resolution for consumers using `moduleResolution: "nodenext"`
 - Update @asl-19/js-dom-utils to 1.1.0

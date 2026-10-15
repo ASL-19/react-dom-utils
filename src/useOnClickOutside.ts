@@ -19,12 +19,12 @@ const useOnClickOutside = ({
   isEnabled,
   ref,
 }: {
-  handler: CallableFunction;
+  handler: (options: { event: MouseEvent }) => void;
   isEnabled: boolean;
   ref: RefObject<HTMLElement | null>;
 }) => {
   useEffect(() => {
-    const listener = (event: MouseEvent | TouchEvent) => {
+    const listener = (event: MouseEvent) => {
       if (!isEnabled) {
         return;
       }
@@ -38,8 +38,7 @@ const useOnClickOutside = ({
         return;
       }
 
-      // Otherwise close the modal
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+      // Otherwise call handler
       handler({ event });
     };
 
