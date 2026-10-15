@@ -1,13 +1,17 @@
 import { focusElement } from "@asl-19/js-dom-utils";
 import { useEffect, useRef, useState } from "react";
 
-import FormState from "./FormState";
+import FormState from "./FormState.js";
 
 /**
  * Hook for storing {@link FormState} and manipulating focus management based on state.
  *
  * @remarks
  * The returned ref objects should be attached to the appropriate elements.
+ *
+ * @param options - Hook options
+ * @param options.disableFocusManagement - Don’t move focus when the form state
+ * changes
  *
  * @public
  *

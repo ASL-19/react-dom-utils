@@ -1,5 +1,11 @@
 # @asl-19/react-dom-utils changelog
 
+## Unreleased
+
+- `useOnClickOutside`: Accept `RefObject<HTMLElement | null>`, so refs created with React 19’s `useRef<HTMLElement>(null)` type check
+- `useFormStateAndFocusManagement`: Fix `FormState` import in type declarations missing its `.js` extension, which broke type resolution for consumers using `moduleResolution: "nodenext"`
+- Add parameter descriptions to `useOnClickOutside` and `useFormStateAndFocusManagement` type declarations
+
 ## [1.1.0](https://github.com/ASL-19/react-dom-utils/pulls?q=is%3Apr+milestone%3A1.1.0) [2025-08-15]
 
 - Migrate to ESM [[#6](https://github.com/ASL-19/react-dom-utils/pull/6)]
